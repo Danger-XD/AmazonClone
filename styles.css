@@ -7,6 +7,8 @@
   --search-bar2: #f3a847;
   --bgcolor-body: #d6d8d8;
   --btn-color: #434f5f;
+  --footer-color1: #232f3e;
+  --footer-color2: #131a22;
 }
 *,
 *::before,
@@ -268,10 +270,10 @@ body {
 #footer-one {
   height: 80dvh;
   width: 100%;
-  background-color: slategray;
+  background-color: var(--footer-color1);
 }
 #footer-two {
   height: 70dvh;
   width: 100%;
-  background-color: powderblue;
+  background-color: var(--footer-color2);
 }
