@@ -149,7 +149,7 @@ body {
 
 /* body work starts here */
 #container {
-  height: 525dvh;
+  height: 608dvh;
   width: 100%;
   z-index: 0;
   position: relative;
@@ -164,10 +164,10 @@ body {
 #pn-btn-box:focus {
   border: 2px solid var(--navbar-white);
 }
-.carousel-control-prev-icon,
+/* .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: #131921;
-}
+} */
 .carousel-item img {
   height: 90dvh;
 }
@@ -178,9 +178,9 @@ body {
 /* grid starts here */
 #grid-container {
   position: absolute;
-  top: 250px;
+  top: 240px;
   z-index: 2;
-  height: 485dvh;
+  height: 570dvh;
   width: 100%;
   background: linear-gradient(
     transparent 1%,
@@ -195,22 +195,62 @@ body {
   align-items: center;
   gap: 15px;
 }
-
 /* selecting the first child write the childs name, not the parent name */
 #four-grid:first-child {
   margin-top: 15px;
 }
 #four-grid {
-  /* height: 420px;
-  width: 315px; */
+  height: 400px;
+  width: 1310px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-rows: 1fr; */
+  gap: 0 23px;
+  /* we can use both grid and flex for the cards  */
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-between; */
+}
+#cards {
+  height: 100%;
+  width: 310px;
+  background-color: var(--navbar-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#cards img {
+  height: 75%;
+  width: 80%;
+}
+#cards a {
+  text-decoration: none;
+}
+#cards-space {
+  height: 100%;
+  width: 310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#cards-space img {
+  height: 90%;
+  width: 100%;
+}
+#whole-grid {
   height: 290px;
   width: 1310px;
   background-color: var(--navbar-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-#whole-grid {
-  height: 280px;
-  width: 1310px;
-  background-color: var(--navbar-white);
+#whole-grid img {
+  height: 86%;
+  width: 95%;
 }
 
 /* signin box starts here */
